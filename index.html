@@ -273,9 +273,10 @@ for (var i = 0; i < nots.length; i++) {
               var nowdate = new Date();
               var nowyear = nowdate.getFullYear();
               var nextbth = document.getElementById("nextbth");
-              var thismonth = nowdate.getMonth() + 1; 
-              var thisday = nowdate.getDay() + 1 ;
-          
+              var thismonth = nowdate.getMonth() + 1 
+              var thisday = new Date().getDate() ; 
+              console.log(nowdate)
+                console.log("d" + thisday + thismonth + "d")
 
               var birthdate = 2000; 
               if (thismonth > 5) {
