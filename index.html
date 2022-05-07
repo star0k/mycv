@@ -275,6 +275,7 @@ for (var i = 0; i < nots.length; i++) {
               var nextbth = document.getElementById("nextbth");
               var thismonth = nowdate.getMonth() + 1; 
               var thisday = nowdate.getDay() + 1 ;
+             
               var birthdate = 2000; 
               if (thismonth > 5) {
                 if (thismonth == 6 ){
@@ -316,6 +317,9 @@ return Math.floor((utc2 - utc1) / _MS_PER_DAY);
             }
              var percentage = Math.floor( (366 - daysleft) / 365 *100) +1;
              console.log(percentage)
+             if (percentage < 13 ) {
+               percentage = 13;
+             }
               var agebar = document.getElementById("agebar"); 
               agebar.setAttribute("aria-valuenow" , percentage)
               agebar.setAttribute("style","width : " + percentage + "%;height:  700%;")
