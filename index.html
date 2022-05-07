@@ -216,8 +216,9 @@ for (var i = 0; i < nots.length; i++) {
           </div>
         </div>
       </div>
-        <div class="agething container-fluid section"
-        >
+
+        <div class="agething container-fluid section">
+          <div id= "nextbth" class="h4 text-center mb-4 title">Next Birthday</div>
             <div class="col-sm-8 progress-container progress-primary"
             id="prg2"
             style="margin-bottom: 0px; text-align: center; margin-left : 15%; "> 
@@ -237,7 +238,6 @@ for (var i = 0; i < nots.length; i++) {
               <span
               style="position:inherit; left: 33.9%; top: -15%; z-index: 1; color: black; font-weight: 900; font-size: 1rem;" 
               id= "nextbth" style="font-size: 70%;">
-                Next Birthday
               </span>
             </div>
             
@@ -275,7 +275,8 @@ for (var i = 0; i < nots.length; i++) {
               var nextbth = document.getElementById("nextbth");
               var thismonth = nowdate.getMonth() + 1; 
               var thisday = nowdate.getDay() + 1 ;
-             
+          
+
               var birthdate = 2000; 
               if (thismonth > 5) {
                 if (thismonth == 6 ){
@@ -332,23 +333,7 @@ return Math.floor((utc2 - utc1) / _MS_PER_DAY);
           <div class="container">
             <div class="card" data-aos="fade-up" data-aos-offset="10">
               <div class="row">
-                <div class="col-lg-6 col-md-12">
-                  <div class="card-body">
-                    <div class="h4 mt-0 title">About</div>
-                    <p>
-                      Hello! i am Tarek ALNajjar , i'm Python and Web Developer
-                      , Micro Controllers Programmer and Online Instructor .
-                    </p>
-                    <p>
-                      Creating things has been my pasion since my childhood ,
-                      and it grew up with me to include creating apps, websites
-                      and robots.<br />
-                      i studied English Litreture as well as Telecommunication
-                      Technology and i did a lot of projects at many fields, and
-                      won some prizes
-                    </p>
-                  </div>
-                </div>
+                
                 <div class="col-lg-6 col-md-12">
                   <div class="card-body">
                     <div class="h4 mt-0 title">Basic Information</div>
@@ -420,7 +405,25 @@ return Math.floor((utc2 - utc1) / _MS_PER_DAY);
                 </div>
               </div>
             </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="card-body">
+                <div class="h4 mt-0 title">About</div>
+                <p>
+                  Hello! i am Tarek ALNajjar , i'm Python and Web Developer
+                  , Micro Controllers Programmer and Online Instructor .
+                </p>
+                <p>
+                  Creating things has been my pasion since my childhood ,
+                  and it grew up with me to include creating apps, websites
+                  and robots.<br />
+                  i studied English Litreture as well as Telecommunication
+                  Technology and i did a lot of projects at many fields, and
+                  won some prizes
+                </p>
+              </div>
+            </div>
           </div>
+          
         </div>
         <div class="section" id="skill">
           <div class="container">
@@ -1045,7 +1048,75 @@ return Math.floor((utc2 - utc1) / _MS_PER_DAY);
                 </div>
               </div>
             </div>
-            <div class="card">
+            <div class="section">
+              <div class="container cc-education">
+                <div class="h4 text-center mb-4 title">Recent Courses</div>
+                <div class="card">
+                  <div class="row">
+                    <div
+                      class="col-md-3 bg-primary"
+                      data-aos="fade-right"
+                      data-aos-offset="50"
+                      data-aos-duration="500"
+                    >
+                      <div class="card-body cc-education-header">
+                        <p> january 2022</p>
+                        <div class="h5">Udemy</div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-9"
+                      data-aos="fade-left"
+                      data-aos-offset="50"
+                      data-aos-duration="500"
+                    >
+                      <div class="card-body">
+                        <div class="h5">
+                          <a target= "_blank" href="https://www.udemy.com/share/1013gG3@zamPdD4zMKqMnw_vfm5eQwSyhMvcHm2TaFM95KTzbmjYCyKo8nwyR0V5ZoPHB42AoA==/">
+                            The Complete 2022 Web Development Bootcamp
+                          </a>
+                        </div>
+                        <p class="category"> Instructor : Dr. Angela Yu </p>
+                        <p>
+                          Course content : HTML, CSS, Javascript, Node, React, MongoDB, Web3 and DApps
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="row">
+                    <div
+                      class="col-md-3 bg-primary"
+                      data-aos="fade-right"
+                      data-aos-offset="50"
+                      data-aos-duration="500"
+                    >
+                      <div class="card-body cc-education-header">
+                        <p>june 2021</p>
+                        <div class="h5">Udemy</div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-9"
+                      data-aos="fade-left"
+                      data-aos-offset="50"
+                      data-aos-duration="500"
+                    >
+                      <div class="card-body">
+                        <div class="h5"><a target="_blank" href="https://www.udemy.com/share/103IHM3@N3IoFPxyAoQPd55JfADBdwLvhI_TCljV_Vwl28GasxsyTk7aMxV91qNcjyYTSBiDGQ==/">
+                          100 Days of Code: The Complete Python Pro Bootcamp for 2022</div>
+                        </a> 
+                        <p class="category">Instructor : Dr. Angela Yu</p>
+                        <p>
+                          Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+            <div class="card" style="opacity: 0;">
               <div class="row">
                 <div
                   class="col-md-3 bg-primary"
