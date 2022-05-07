@@ -256,10 +256,64 @@ return Math.floor((utc2 - utc1) / _MS_PER_DAY);
                   <div class="card-body">
                     <div class="h4 mt-0 title">Basic Information</div>
                     <div class="row">
+<<<<<<< HEAD
                       <!-- <div class="col-sm-4">
                       </div> -->
                       
                       <!-- </div> -->
+=======
+                      <div class="col-sm-4">
+                        <strong class="text-uppercase">Age:</strong>
+                      </div>
+                      <div class="col-sm-8 progress-container progress-primary"
+                      style="margin-bottom: 0px; text-align: center;"> 
+                        <div class="progress">
+                          <div
+                            id="agebar"
+                            class="progress-bar progress-bar-primary"
+                            data-aos="progress-full"
+                            data-aos-offset="10"
+                            data-aos-duration="2000"
+                            role="progressbar"
+                            aria-valuenow="80"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="width: 75% ;"
+                          ></div>
+                          
+                          <span class="progress-value"
+                          id = "thisyear"
+                          style="position:absolute; left: 39.8%; top: 18%; z-index: 1; color: black; font-weight: 900;">23</span>
+                          <span class="progress-value"
+                          id = "nextyear"
+                          style="position:fixed; left: 95%; top: 18%; z-index: 1; color: black; font-weight: 900;">24</span>
+
+                        </div>
+                        <script>
+                          var thisyear = document.getElementById("thisyear");
+                          var nextyear = document.getElementById("nextyear");
+                          var nowyear = new Date().getFullYear();
+                          thisyear.innerHTML = nowyear - 2000;
+                          nextyear.innerHTML = nowyear - 1999;
+                          function dateDifference(date2, date1) {
+    const _MS_PER_DAY = 1000 * 60 * 60 * 24;
+
+    // Discard the time and time-zone information.
+    const utc1 = Date.UTC(date1.getFullYear(), date1.getMonth(), date1.getDate());
+    const utc2 = Date.UTC(date2.getFullYear(), date2.getMonth(), date2.getDate());
+
+    return Math.floor((utc2 - utc1) / _MS_PER_DAY);
+}
+
+                         var daysleft =  dateDifference(new Date(nowyear + '-06-13'), new Date())
+                         var percentage = Math.floor( (365 - daysleft) / 365 *100);
+                         console.log(percentage)
+                          var agebar = document.getElementById("agebar"); 
+                          agebar.setAttribute("aria-valuenow" , percentage)
+                          agebar.setAttribute("style","width : " + percentage + "%")
+                        </script>
+                      </div>
+>>>>>>> 71fb84631e71c3db96ceadcc6caf4ec3fe1325a0
                     </div>
                     <div class="row mt-3">
                       <div class="col-sm-4">
