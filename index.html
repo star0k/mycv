@@ -41,47 +41,42 @@
   >
 
   </div>
-  
-  <div 
-  hidden
-  class="not"
+
+  <center>
+    
+    <div 
+    hidden
+    class="not"
   id= "not2"
   style="z-index: 1041;
-  width : 70%;
-  height : 40%;
+max-width :50%;
   opacity : 1;
   background-color: white;
   border-radius : 40px;
   text-align : center;
-  position : fixed;
-  top : 25%;
-  left : 12%;
+  position :fixed;
+  display :block;
+  top:30%;
+  left : 25%;
+
   "
   >
-    <h3
+ <h3
     style="
+    margin: auto;
     margin : 5%;
-    margin-top : 5%;
+  
     "
     >
     you can click on projects in the portfolio for source code and information
-  </h3>
-  <div
-  style="
+  </h4>
+  <button type="button" style="width:50%; margin-bottom:3%" onclick="{hidenote()}" class="btn btn-primary"><h3 style="margin: auto;">OK</h3></button>
 
-  border: 2px solid black;
-  border-radius : 50px;
-  width : 36%;
-  margin-left : 30%;
-  "
-  onclick="{hidenote()}"
-  >
-    <h6
-    style="
-    margin-top : 5%;
-    ">OK</h6>
-  </div>
-  </div>
+  
+  
+  
+</div>
+</center>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
   <script>
@@ -106,7 +101,6 @@ for (var i = 0; i < nots.length; i++) {
       }
   </script>
   <body id="top">
-  
     <header>
       <div class="profile-page sidebar-collapse">
         <nav
@@ -163,11 +157,21 @@ for (var i = 0; i < nots.length; i++) {
         <div class="profile-page">
           <div class="wrapper">
             <div class="page-header page-header-small" filter-color="green">
-              <div
-                class="page-header-image"
-                data-parallax="true"
-                style="background-image: url('images/cc-bg-1.jpg')"
-              ></div>
+           
+             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel"  style = "position:fixed ; z-index:-2">
+              <div class="carousel-inner">
+                <div class="carousel-item ">
+                  <img  src='images/cc-bg-1.jpg' alt="">                </div>
+                <div class="carousel-item active">
+                  <img class="d-block"   src="images/cros2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="images/cros3.jpg" alt="Third slide">
+                </div>
+              </div>
+            </div>
+           
+              
               <div class="container">
                 <div class="content-center">
                   <div class="cc-profile-image">
@@ -244,11 +248,11 @@ for (var i = 0; i < nots.length; i++) {
               <span 
               class="progress-value"
               id = "thisyear"
-              style="position:absolute; left: -85.9%; top]: -100%; z-index: 1; color: black; font-weight: 900;">23</span>
+              style="position:absolute; left: -85.9%; top: 10%; z-index: 1; color: black; font-weight: 900;">23</span>
               <span 
               class="progress-value"
               id = "nextyear"
-              style="position:absolute; left: 85.9%; top: -100%; z-index: 1; color: black; font-weight: 900;">24</span>
+              style="position:absolute; left: 85.9%; top: 10%; z-index: 1; color: black; font-weight: 900;">24</span>
               <span 
               class="progress-value"
               id = "remdays"
@@ -332,12 +336,16 @@ return Math.floor((utc2 - utc1) / _MS_PER_DAY);
         
         <div class="section" id="about">
           <div class="container">
+            <img src="images/aider.png" width="5%" alt="Image" style = "position:absolute ; z-index : 1 ; top:0.3%; left:18.5%;"/>    
+
             <div class="card" data-aos="fade-up" data-aos-offset="10">
               <div class="row">
                 
                 <div class="col-lg-6 col-md-12">
+
                   <div class="card-body">
                     <div class="h4 mt-0 title">Basic Information</div>
+
                     <div class="row">
                       <!-- <div class="col-sm-4">
                       </div> -->
@@ -538,7 +546,7 @@ return Math.floor((utc2 - utc1) / _MS_PER_DAY);
                   </div>
                   <div class="col-md-6">
                     <div class="progress-container progress-primary">
-                      <Flask class="progress-badge">Flask</span>
+                      <span class="progress-badge">Flask</span>
                       <div class="progress">
                         <div
                           class="progress-bar progress-bar-primary"
@@ -1090,7 +1098,44 @@ return Math.floor((utc2 - utc1) / _MS_PER_DAY);
                       data-aos-duration="500"
                     >
                       <div class="card-body cc-education-header">
-                        <p> january 2022</p>
+                       
+
+                        <p> August 2022</p>
+                        <div class="h5">Damascus Youth Training Center</div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-9"
+                      data-aos="fade-left"
+                      data-aos-offset="50"
+                      data-aos-duration="500"
+                    >
+                      <div class="card-body">
+                        <div class="h5">
+                            The Complete Medical Care Course 
+                          </a>
+                        </div>
+                        <p class="category"> Instructor : Dr. Emad Seif </p>
+                        <img src="images/aider.png" width="18%" alt="Image" style = "position:absolute ; z-index : 1 ; top:10%; right:10%;"/>    
+
+                        <p>
+                          Course content : 
+                          Nursing, cosmetic stitching, first aid, injection
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="row">
+                    <div
+                      class="col-md-3 bg-primary"
+                      data-aos="fade-right"
+                      data-aos-offset="50"
+                      data-aos-duration="500"
+                    >
+                      <div class="card-body cc-education-header">
+                        <p> Septemper 2022</p>
                         <div class="h5">Udemy</div>
                       </div>
                     </div>
